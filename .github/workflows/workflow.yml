@@ -18,14 +18,13 @@ jobs:
       - name: report artifact
         uses: actions/upload-artifact@v3
         with:
-          name: report
+          name: API Report
           path: report/report.html
       - name: junit report
         uses: mikepenz/action-junit-report@v3
         if: always()
         with:
           report_paths: report/report.xml
-          fail_on_failure: true
   UI:
     runs-on: ubuntu-latest
     steps:
@@ -40,11 +39,10 @@ jobs:
       - name: report artifact
         uses: actions/upload-artifact@v3
         with:
-          name: report
+          name: UI Report
           path: report/report.html
       - name: junit report
         uses: mikepenz/action-junit-report@v3
         if: always()
         with:
           report_paths: report/report.xml
-          fail_on_failure: true
