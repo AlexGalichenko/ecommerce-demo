@@ -1,0 +1,36 @@
+{
+  "name": "ecommerce-demo",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test:ui": "npx ts-node --esm node_modules/@qavajs/cli/bin/qavajs.js run --config ui.ts",
+    "test:api": "npx ts-node --esm node_modules/@qavajs/cli/bin/qavajs.js run --config api.ts",
+    "debug:ui": "npx ts-node --esm node_modules/@qavajs/cli/bin/qavajs.js run --config ui.ts --tags @debug"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AlexGalichenko/ecommerce-demo.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/AlexGalichenko/ecommerce-demo/issues"
+  },
+  "homepage": "https://github.com/AlexGalichenko/ecommerce-demo#readme",
+  "dependencies": {
+    "@cucumber/cucumber": "^9.1.2",
+    "@qavajs/cli": "^0.0.24",
+    "@qavajs/console-formatter": "^0.2.1",
+    "@qavajs/format-report-portal": "^0.0.8",
+    "@qavajs/html-formatter": "^0.0.11",
+    "@qavajs/memory": "^1.4.1",
+    "@qavajs/po-playwright": "^0.0.9",
+    "@qavajs/steps-api": "^0.0.14",
+    "@qavajs/steps-memory": "^0.0.11",
+    "@qavajs/steps-playwright": "^0.0.24",
+    "@qavajs/template": "^0.0.7",
+    "@qavajs/xunit-formatter": "^0.0.4",
+    "ts-node": "^10.9.1"
+  }
+}
