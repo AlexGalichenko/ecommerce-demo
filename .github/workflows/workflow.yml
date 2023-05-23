@@ -48,4 +48,3 @@ jobs:
         with:
           report_paths: report/report.xml
           fail_on_failure: true
-`
