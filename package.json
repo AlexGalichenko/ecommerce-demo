@@ -31,6 +31,7 @@
     "@qavajs/steps-playwright": "^0.0.24",
     "@qavajs/template": "^0.0.7",
     "@qavajs/xunit-formatter": "^0.0.4",
+    "dotenv": "^16.0.3",
     "ts-node": "^10.9.1"
   }
 }

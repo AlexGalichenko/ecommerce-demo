@@ -76,3 +76,11 @@ Feature: Order
     And I click 'Checkout > Confirm And Pay'
 
     And I expect text of 'Order Completed > Order ID' to match '[a-zA-Z0-9]{8}-[a-zA-Z0-9]{4}-[a-zA-Z0-9]{4}-[a-zA-Z0-9]{4}-[a-zA-Z0-9]{12}'
+
+  Scenario: Simple Order (expected to fail)
+    When I click 'Header > #Products in Navigations'
+    And I save text of 'All Products > #Mod in Products > Price' as 'price'
+    And I click 'All Products > #Mod in Products'
+    And I click 'Product > Add To Cart'
+    And I click 'Header > Cart'
+    And I expect text of 'Cart > #1 of Products > Title' to equal 'RedMod'

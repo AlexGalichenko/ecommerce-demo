@@ -1,3 +1,5 @@
+import { config } from 'dotenv';
+config();
 import Memory from './memory';
 import App from './page_object';
 
@@ -13,8 +15,22 @@ export default {
     format: [
         '@qavajs/console-formatter',
         '@qavajs/xunit-formatter:report/report.xml',
-        '@qavajs/html-formatter:report/report.html'
+        '@qavajs/html-formatter:report/report.html',
+        '@qavajs/format-report-portal:report/rp.out'
     ],
+    formatOptions: {
+        rpConfig: {
+            enable: Boolean(process.env.RP),
+            debug: false,
+            token: process.env.RP_TOKEN,
+            endpoint: process.env.RP_ENDPOINT,
+            description: 'UI',
+            tags: ['UI'],
+            project: process.env.RP_PROJECT,
+            launch: 'E-Commerce Demo UI',
+            mode: 'DEFAULT'
+        },
+    },
     memory: new Memory(),
     pageObject: new App(),
     browser: {
@@ -22,6 +38,7 @@ export default {
             browserName: 'chromium'
         }
     },
+    screenshot: ['onFail'],
     templates: ['templates/*.feature'],
     publishQuiet: true,
     parallel: 1
