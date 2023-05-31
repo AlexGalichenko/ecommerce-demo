@@ -35,7 +35,8 @@ export default {
     pageObject: new App(),
     browser: {
         capabilities: {
-            browserName: 'chromium'
+            browserName: 'chromium',
+            headless: false
         }
     },
     screenshot: ['onFail'],

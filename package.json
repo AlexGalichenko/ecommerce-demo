@@ -4,9 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test:ui": "npx ts-node --esm node_modules/@qavajs/cli/bin/qavajs.js run --config ui.ts",
-    "test:api": "npx ts-node --esm node_modules/@qavajs/cli/bin/qavajs.js run --config api.ts",
-    "debug:ui": "npx ts-node --esm node_modules/@qavajs/cli/bin/qavajs.js run --config ui.ts --tags @debug"
+    "test:ui": "npx ts-node node_modules/@qavajs/cli/bin/qavajs.js run --config ui.ts",
+    "test:api": "npx ts-node node_modules/@qavajs/cli/bin/qavajs.js run --config api.ts",
+    "debug:ui": "npx ts-node node_modules/@qavajs/cli/bin/qavajs.js run --config ui.ts --tags @debug"
   },
   "repository": {
     "type": "git",
@@ -20,18 +20,18 @@
   "homepage": "https://github.com/AlexGalichenko/ecommerce-demo#readme",
   "dependencies": {
     "@cucumber/cucumber": "^9.1.2",
-    "@qavajs/cli": "^0.0.24",
+    "@qavajs/cli": "^0.26.0",
     "@qavajs/console-formatter": "^0.2.1",
-    "@qavajs/format-report-portal": "^0.0.8",
+    "@qavajs/format-report-portal": "^0.9.1",
     "@qavajs/html-formatter": "^0.0.11",
-    "@qavajs/memory": "^1.4.1",
+    "@qavajs/memory": "^1.5.0",
     "@qavajs/po-playwright": "^0.0.9",
     "@qavajs/steps-api": "^0.0.14",
     "@qavajs/steps-memory": "^0.0.11",
     "@qavajs/steps-playwright": "^0.0.24",
     "@qavajs/template": "^0.0.7",
     "@qavajs/xunit-formatter": "^0.0.4",
-    "dotenv": "^16.0.3",
+    "dotenv": "^16.1.1",
     "ts-node": "^10.9.1"
   }
 }

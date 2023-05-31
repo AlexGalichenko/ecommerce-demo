@@ -31,5 +31,5 @@ Feature: API
     """
     And I send '$request' request and save response as 'response'
     And I parse '$response' body as json
-    Then Response '$response' Status Code to be equal '201'
-    And Response '$response' Status Message to be equal 'Created'
+    Then I expect '$response.status' to be equal '201'
+    And I expect '$response.statusText' to be equal 'Created'
