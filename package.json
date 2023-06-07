@@ -26,10 +26,10 @@
     "@qavajs/html-formatter": "^0.0.11",
     "@qavajs/memory": "^1.5.0",
     "@qavajs/po-playwright": "^0.0.9",
-    "@qavajs/steps-api": "^0.0.14",
+    "@qavajs/steps-api": "^0.15.0",
     "@qavajs/steps-memory": "^0.0.11",
-    "@qavajs/steps-playwright": "^0.0.24",
-    "@qavajs/template": "^0.0.7",
+    "@qavajs/steps-playwright": "^0.26.0",
+    "@qavajs/template": "^0.8.0",
     "@qavajs/xunit-formatter": "^0.0.4",
     "dotenv": "^16.1.1",
     "ts-node": "^10.9.1"

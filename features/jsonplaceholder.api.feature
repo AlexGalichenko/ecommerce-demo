@@ -15,7 +15,7 @@ Feature: API
     Then I expect '$response.payload.userId' to equal '1'
     Then I expect '$response.payload.id' to equal '1'
     Then I expect '$response.payload.title' to equal 'delectus aut autem'
-    Then I expect '$response.payload.completed' to equal '$boolean("false")'
+    Then I expect '$response.payload.completed' to equal '$js(false)'
 
   Scenario: Create post
     Given I create 'POST' request 'request'
