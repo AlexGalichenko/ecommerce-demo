@@ -22,7 +22,7 @@ export default {
         rpConfig: {
             enable: Boolean(process.env.RP),
             debug: false,
-            token: process.env.RP_TOKEN,
+            apiKey: process.env.RP_TOKEN,
             endpoint: process.env.RP_ENDPOINT,
             description: 'UI',
             tags: ['UI'],
@@ -36,10 +36,9 @@ export default {
     browser: {
         capabilities: {
             browserName: 'chromium'
-        }
+        },
+        screenshot: ['onFail'],
     },
-    screenshot: ['onFail'],
     templates: ['templates/*.feature'],
-    publishQuiet: true,
     parallel: 1
 }
